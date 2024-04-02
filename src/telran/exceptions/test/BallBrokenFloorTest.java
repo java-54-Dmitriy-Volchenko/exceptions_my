@@ -21,7 +21,8 @@ class BallBrokenFloorTest {
 		    int right = N_FLOORS;
 
 		    while (left <= right) {
-		        int middle = left/2 + right/2; 
+		        //int middle = left/2 + right/2; 
+		        int middle = (left+right)>>>1; 
 
 		        try {
 		            bbf.checkFloor(middle);
